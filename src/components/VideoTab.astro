@@ -1,0 +1,91 @@
+---
+
+---
+
+<div id="video-tab" class="card p-8 animate-fade-in">
+  <h2 class="text-3xl font-bold mb-6 text-center text-cyan-50">
+    Características Clave
+  </h2>
+
+  <div
+    class="relative aspect-video bg-gray-900 rounded-xl overflow-hidden border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
+  >
+    <video
+      id="video-player"
+      class="absolute inset-0 w-full h-full object-cover hidden"
+      src="/videos/video-prueba.mp4"
+      controls></video>
+
+    <div
+      id="play-overlay"
+      class="absolute inset-0 flex items-center justify-center"
+    >
+      <div
+        class="w-20 h-20 rounded-full bg-cyan-400/20 flex items-center justify-center cursor-pointer hover:bg-cyan-400/30 transition-all duration-300 animate-pulse"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 text-cyan-400"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+          ></path>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div
+      class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
+    >
+      <h3 class="text-xl font-semibold mb-3">Lorem Ipsum</h3>
+      <p class="text-gray-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </div>
+
+    <div
+      class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
+    >
+      <h3 class="text-xl font-semibold mb-3">Dolor Sit Amet</h3>
+      <p class="text-gray-400">
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <div
+      class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
+    >
+      <h3 class="text-xl font-semibold mb-3">Consectetur Adipiscing</h3>
+      <p class="text-gray-400">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const playOverlay = document.getElementById("play-overlay");
+    const videoPlayer = document.getElementById("video-player");
+
+    if (playOverlay && videoPlayer) {
+      playOverlay.addEventListener("click", () => {
+        playOverlay.classList.add("hidden");
+        videoPlayer.classList.remove("hidden");
+      });
+    }
+  });
+</script>

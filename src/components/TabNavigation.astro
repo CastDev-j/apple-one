@@ -1,0 +1,36 @@
+---
+interface Props {
+  activeTab: "information" | "video" | "files";
+}
+
+const { activeTab } = Astro.props;
+---
+
+<nav class="flex justify-center mb-8">
+  <div class="inline-flex bg-gray-800 rounded-lg p-1">
+    <a
+      href="/"
+      data-tab="information"
+      class={`px-6 py-3 text-lg font-medium rounded-md transition-all duration-300 ${activeTab === "information" ? "bg-cyan-600 text-white" : "text-gray-400 hover:text-gray-200"}`}
+      data-astro-transition
+    >
+      Información
+    </a>
+    <a
+      href="/video"
+      data-tab="video"
+      class={`px-6 py-3 text-lg font-medium rounded-md transition-all duration-300 ${activeTab === "video" ? "bg-cyan-600 text-white" : "text-gray-400 hover:text-gray-200"}`}
+      data-astro-transition
+    >
+      Video
+    </a>
+    <a
+      href="/archivos"
+      data-tab="files"
+      class={`px-6 py-3 text-lg font-medium rounded-md transition-all duration-300 ${activeTab === "files" ? "bg-cyan-600 text-white" : "text-gray-400 hover:text-gray-200"}`}
+      data-astro-transition
+    >
+      Archivos
+    </a>
+  </div>
+</nav>

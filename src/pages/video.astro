@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TabNavigation from "../components/TabNavigation.astro";
+import VideoTab from "../components/VideoTab.astro";
+
+// Get the active tab from URL or default to 'information'
+const tab = Astro.url.searchParams.get("tab") || "information";
+---
+
+<Layout title="Apple One | Todo lo que necesitas en un solo lugar">
+  <main class="container mx-auto px-4 py-12 max-w-6xl">
+    <header class="text-center mb-16 animate-fade-in">
+      <div class="flex justify-center mb-6">
+        <svg
+          class="w-12 h-12"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.0466 12.8019C17.0093 9.80189 19.5466 8.50189 19.6466 8.45189C18.2066 6.35189 15.9866 6.05189 15.1866 6.02189C13.3066 5.82189 11.5066 7.12189 10.5466 7.12189C9.58659 7.12189 8.12659 6.05189 6.54659 6.08189C4.52659 6.11189 2.66659 7.22189 1.64659 8.95189C-0.453407 12.4519 1.12659 17.7519 3.14659 20.7019C4.16659 22.1519 5.34659 23.7719 6.90659 23.7119C8.42659 23.6519 9.02659 22.7519 10.8466 22.7519C12.6666 22.7519 13.2266 23.7119 14.8066 23.6819C16.4266 23.6519 17.4466 22.2019 18.4266 20.7419C19.5866 19.0819 20.0466 17.4519 20.0666 17.3619C20.0266 17.3519 17.0866 16.2019 17.0466 12.8019Z"
+            fill="white"></path>
+          <path
+            d="M14.1866 4.32189C14.9866 3.32189 15.5266 1.94189 15.3666 0.541895C14.1866 0.591895 12.7266 1.34189 11.8866 2.32189C11.1466 3.18189 10.4866 4.62189 10.6666 5.96189C11.9866 6.06189 13.3866 5.32189 14.1866 4.32189Z"
+            fill="white"></path>
+        </svg>
+      </div>
+      <h1 class="text-5xl font-bold mb-2 text-white">Apple One</h1>
+      <p class="text-xl text-gray-300">
+        Todo lo que necesitas en un solo lugar
+      </p>
+    </header>
+
+    <TabNavigation activeTab={"video"} />
+
+    <div class="tab-content mt-8 transition-all duration-500 ease-in-out">
+      <VideoTab />
+    </div>
+  </main>
+</Layout>
