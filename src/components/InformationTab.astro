@@ -1,50 +1,282 @@
 ---
-const services = [
-  { name: "Apple Music", icon: "music" },
-  { name: "Apple TV+", icon: "tv" },
-  { name: "Apple Arcade", icon: "gamepad" },
-  { name: "iCloud Storage", icon: "cloud" },
-  { name: "Apple News+", icon: "newspaper" },
-  { name: "Apple Fitness+", icon: "heart" }
-];
+import Image from "astro:assets";
 ---
 
-<div id="information-tab" class="card p-8 animate-fade-in">
-  <h2 class="text-3xl font-bold mb-6 text-center text-cyan-50">Información sobre Apple One</h2>
-  
-  <div class="mb-8">
-    <p class="text-lg text-gray-300 mb-4">
-      Apple One es la suscripción definitiva que combina todos los servicios premium de Apple en un solo paquete conveniente.
+<div id="information-tab" class="card container animate-fade-in">
+  <h2 class="text-3xl font-bold mb-8 text-center text-cyan-50">
+    Historia de Apple Computer Inc.
+  </h2>
+
+  <!-- Sección 1: Fundación -->
+  <div
+    class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 mb-8"
+  >
+    <h3 class="text-2xl font-semibold mb-4 text-cyan-400">
+      Inicio de Apple Computer Inc.
+    </h3>
+    <p class="text-gray-300 mb-4">
+      Esta historia se remonta al año <span class="text-cyan-400 font-medium"
+        >1976</span
+      >, cuando el
+      <span class="text-cyan-400 font-medium">1 de abril</span> de ese año tres muchachos
+      crearon
+      <span class="text-cyan-400 font-medium">Apple Computer Inc.</span>:
+      <span class="text-cyan-400 font-medium">Steve Jobs</span>,
+      <span class="text-cyan-400 font-medium">Steve Wozniak</span> y
+      <span class="text-cyan-400 font-medium">Ronald Wayne</span>. Wozniak, a
+      quien le decían Woz, era informático y un experto en su materia.
     </p>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-      {services.map(service => (
-        <div class="service-card bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-transform duration-300 hover:scale-105">
-          <div class="flex items-center mb-4">
-            <div class="w-10 h-10 rounded-full bg-cyan-400/20 flex items-center justify-center mr-4">
-              <i class={`fas fa-${service.icon} text-cyan-400`}></i>
-            </div>
-            <h3 class="text-xl font-semibold text-white">{service.name}</h3>
-          </div>
-          <p class="text-gray-400">Acceso completo a todo el contenido de {service.name} incluido en tu suscripción.</p>
-        </div>
-      ))}
+  </div>
+
+  <!-- Sección 2: Apple I con imagen -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <div
+      class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
+    >
+      <h3 class="text-2xl font-semibold mb-4 text-cyan-400">
+        El primer producto
+      </h3>
+      <p class="text-gray-300 mb-4">
+        El <span class="text-cyan-400 font-medium">Apple I</span> salió a la venta
+        en
+        <span class="text-cyan-400 font-medium">julio de 1976</span> con el precio
+        de
+        <span class="text-cyan-400 font-medium">666,66 dólares</span>. Se
+        fabricaron
+        <span class="text-cyan-400 font-medium">200 unidades</span>. A
+        diferencia de otras computadoras para aficionados de esos días, el Apple
+        I era un
+        <span class="text-cyan-400 font-medium"
+          >tablero de circuitos completamente ensamblado</span
+        > que contenía
+        <span class="text-cyan-400 font-medium">62 chips</span>.
+      </p>
+    </div>
+    <div class="flex items-center justify-center">
+      <img
+        src="/imagenes/apple-code.jpeg"
+        alt="Código Apple I"
+        class="rounded-xl border border-cyan-400/20 w-full h-auto max-h-64 object-cover"
+      />
     </div>
   </div>
-  
-  <div class="mt-10 p-6 bg-gray-900 rounded-lg border border-cyan-400/20">
-    <p class="text-lg text-gray-300">
-      Con Apple One, puedes disfrutar de todos estos servicios a un precio reducido. Mantéuraporaicise sabora meñor con nuestra suscripción todo en uno que te permite acceder a música, películas, juegos, almacenamiento en la nube y mucho más.
+
+  <!-- Sección 3: Componentes -->
+  <div
+    class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 mb-8"
+  >
+    <h3 class="text-2xl font-semibold mb-4 text-cyan-400">
+      Componentes adicionales necesarios
+    </h3>
+    <p class="text-gray-300 mb-4">
+      Para hacer una computadora funcional, los usuarios tenían que agregar:
+    </p>
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-300 mb-4">
+      <li class="flex items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 mr-2 text-cyan-400"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+            clip-rule="evenodd"></path>
+        </svg>
+        Una carcasa
+      </li>
+      <li class="flex items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 mr-2 text-cyan-400"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+            clip-rule="evenodd"></path>
+        </svg>
+        Transformador para fuente de alimentación
+      </li>
+      <li class="flex items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 mr-2 text-cyan-400"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+            clip-rule="evenodd"></path>
+        </svg>
+        Interruptor de encendido
+      </li>
+      <li class="flex items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 mr-2 text-cyan-400"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+            clip-rule="evenodd"></path>
+        </svg>
+        Teclado ASCII
+      </li>
+    </ul>
+    <p class="text-gray-300">
+      Más adelante se comercializó una <span class="text-cyan-400 font-medium"
+        >tarjeta opcional</span
+      > que proporcionaba una interfaz para casetes de almacenamiento.
     </p>
   </div>
-</div>
 
-<script>
-  // Add Font Awesome for icons
-  document.addEventListener('astro:page-load', () => {
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
-    document.head.appendChild(link);
-  });
-</script>
+  <!-- Sección 4: Estado actual con imagen -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <div class="flex items-center justify-center order-1 md:order-2">
+      <img
+        src="/imagenes/apple-one.jpeg"
+        alt="Apple I original"
+        class="rounded-xl border border-cyan-400/20 w-full h-auto max-h-64 object-cover"
+      />
+    </div>
+    <div
+      class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 order-2 md:order-1"
+    >
+      <h3 class="text-2xl font-semibold mb-4 text-cyan-400">
+        Estado actual del Apple I
+      </h3>
+      <p class="text-gray-300">
+        De los <span class="text-cyan-400 font-medium"
+          >200 modelos fabricados</span
+        >, quedan alrededor de
+        <span class="text-cyan-400 font-medium">60-70 unidades</span> en todo el
+        mundo. El Apple I no es solo lo primero que hizo Apple, sino el
+        <span class="text-cyan-400 font-medium"
+          >primer PC que combinó un microprocesador con conexión para teclado y
+          monitor</span
+        >.
+      </p>
+    </div>
+  </div>
+
+  <!-- Sección 5: Recursos -->
+  <div
+    class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
+  >
+    <h3 class="text-2xl font-semibold mb-4 text-cyan-400">
+      Recursos y enlaces
+    </h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mt-0.5 mr-2 text-cyan-400 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>
+              <strong class="text-gray-200">Emulador de Apple I</strong>:
+              Apple1JS – Apple 1 Emulator
+            </span>
+          </li>
+          <li class="flex items-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mt-0.5 mr-2 text-cyan-400 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>
+              <strong class="text-gray-200">Manual de Apple I</strong>:
+              <a
+                href="http://apple1.chez.com/Apple1project/Docs/pdf/AppleI_Manual.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-cyan-400 hover:underline ml-1"
+              >
+                Ver PDF
+              </a>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mt-0.5 mr-2 text-cyan-400 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>
+              <strong class="text-gray-200">Diseño del Apple I</strong>:
+              <a
+                href="https://www.rrauction.com/auctions/lot-detail/343672105986001-apple-1-computer-with-original-box-signed-by-steve-wozniak/#mz-expanded-view-765102684652"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-cyan-400 hover:underline ml-1"
+              >
+                Ver subasta
+              </a>
+            </span>
+          </li>
+          <li class="flex items-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mt-0.5 mr-2 text-cyan-400 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>
+              <strong class="text-gray-200">Sitio adicional</strong>:
+              <a
+                href="https://stid.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-cyan-400 hover:underline ml-1"
+              >
+                stid.me
+              </a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex justify-center mt-6">
+      <img
+        src="/imagenes/apple-one-components.jpeg"
+        alt="Componentes del Apple I"
+        class="rounded-xl border border-cyan-400/20 w-full max-w-2xl"
+      />
+    </div>
+  </div>
+</div>

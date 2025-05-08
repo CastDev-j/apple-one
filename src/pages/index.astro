@@ -1,12 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TabNavigation from "../components/TabNavigation.astro";
 import InformationTab from "../components/InformationTab.astro";
-
+import VideoTab from "@/components/VideoTab.astro";
 ---
 
 <Layout title="Apple One | Todo lo que necesitas en un solo lugar">
-  <main class="container mx-auto px-4 py-12 max-w-6xl">
+  <main
+    class="container mx-auto px-4 py-12 max-w-6xl flex justify-center items-center flex-col"
+  >
     <header class="text-center mb-16 animate-fade-in">
       <div class="flex justify-center mb-6">
         <svg
@@ -29,10 +30,12 @@ import InformationTab from "../components/InformationTab.astro";
       </p>
     </header>
 
-    <TabNavigation activeTab={"information"} />
-
     <div class="tab-content mt-8 transition-all duration-500 ease-in-out">
       <InformationTab />
+    </div>
+
+    <div class="tab-content mt-8 transition-all duration-500 ease-in-out">
+      <VideoTab />
     </div>
   </main>
 </Layout>

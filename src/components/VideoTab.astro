@@ -2,84 +2,268 @@
 
 ---
 
-<div id="video-tab" class="card p-8 animate-fade-in">
-  <h2 class="text-3xl font-bold mb-6 text-center text-cyan-50">
-    Características Clave
-  </h2>
+<div id="technical-features" class="container animate-fade-in">
+  <div class="bg-gray-800/50 p-8 rounded-xl border border-cyan-400/20">
+    <h2 class="text-2xl font-bold mb-6 text-cyan-400 text-center">
+      Especificaciones Técnicas del Apple I
+    </h2>
 
-  <div
-    class="relative aspect-video bg-gray-900 rounded-xl overflow-hidden border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
-  >
-    <video
-      id="video-player"
-      class="absolute inset-0 w-full h-full object-cover hidden"
-      src="https://res.cloudinary.com/dyhudqjn6/video/upload/v1746598937/tsg6yrnksy4z50p0de1b.mp4"
-      controls></video>
-
+    <!-- Video Section -->
     <div
-      id="play-overlay"
-      class="absolute inset-0 flex items-center justify-center"
+      class="relative aspect-video bg-gray-900 rounded-xl overflow-hidden border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 mb-8"
     >
+      <video
+        id="apple1-video-player"
+        class="absolute inset-0 w-full h-full object-cover hidden"
+        src="https://res.cloudinary.com/dyhudqjn6/video/upload/v1746598937/tsg6yrnksy4z50p0de1b.mp4"
+        controls></video>
+
       <div
-        class="w-20 h-20 rounded-full bg-cyan-400/20 flex items-center justify-center cursor-pointer hover:bg-cyan-400/30 transition-all duration-300 animate-pulse"
+        id="apple1-play-overlay"
+        class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-900/70 to-cyan-900/20"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-10 w-10 text-cyan-400"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-          ></path>
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
+        <div class="text-center p-6 max-w-2xl">
+          <div
+            class="w-20 h-20 rounded-full bg-cyan-400/20 flex items-center justify-center cursor-pointer hover:bg-cyan-400/30 transition-all duration-300 animate-pulse mx-auto mb-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10 text-cyan-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-cyan-50 mb-2">
+            Ver demostración técnica
+          </h3>
+          <p class="text-gray-300">
+            Un vistazo al funcionamiento interno del Apple I
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-    <div
-      class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
-    >
-      <h3 class="text-xl font-semibold mb-3">Lorem Ipsum</h3>
-      <p class="text-gray-400">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
-    </div>
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Hardware -->
+      <div
+        class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
+      >
+        <div class="flex items-center mb-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 mr-2 text-cyan-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"
+            ></path>
+          </svg>
+          <h3 class="text-xl font-semibold text-cyan-300">Hardware</h3>
+        </div>
+        <ul class="text-gray-300 space-y-2">
+          <li class="flex items-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2 text-cyan-400 mt-0.5 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Procesador MOS 6502 a 1MHz
+          </li>
+          <li class="flex items-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2 text-cyan-400 mt-0.5 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            4KB de memoria RAM (ampliable a 8KB)
+          </li>
+          <li class="flex items-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2 text-cyan-400 mt-0.5 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            62 chips en placa base
+          </li>
+        </ul>
+      </div>
 
-    <div
-      class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
-    >
-      <h3 class="text-xl font-semibold mb-3">Dolor Sit Amet</h3>
-      <p class="text-gray-400">
-        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </div>
+      <!-- Software -->
+      <div
+        class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
+      >
+        <div class="flex items-center mb-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 mr-2 text-cyan-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+          </svg>
+          <h3 class="text-xl font-semibold text-cyan-300">Software</h3>
+        </div>
+        <ul class="text-gray-300 space-y-2">
+          <li class="flex items-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2 text-cyan-400 mt-0.5 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Intérprete BASIC en cassette
+          </li>
+          <li class="flex items-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2 text-cyan-400 mt-0.5 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Monitor de 24 líneas x 40 columnas
+          </li>
+          <li class="flex items-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2 text-cyan-400 mt-0.5 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Entrada/salida por teclado ASCII
+          </li>
+        </ul>
+      </div>
 
-    <div
-      class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
-    >
-      <h3 class="text-xl font-semibold mb-3">Consectetur Adipiscing</h3>
-      <p class="text-gray-400">
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-      </p>
+      <!-- Innovación -->
+      <div
+        class="bg-gray-800 p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
+      >
+        <div class="flex items-center mb-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 mr-2 text-cyan-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+          <h3 class="text-xl font-semibold text-cyan-300">Innovación</h3>
+        </div>
+        <ul class="text-gray-300 space-y-2">
+          <li class="flex items-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2 text-cyan-400 mt-0.5 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Primer computador con conexión integrada
+          </li>
+          <li class="flex items-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2 text-cyan-400 mt-0.5 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Diseño completamente ensamblado
+          </li>
+          <li class="flex items-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2 text-cyan-400 mt-0.5 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Precio accesible para la época ($666.66)
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
 
 <script>
   document.addEventListener("astro:page-load", () => {
-    const playOverlay = document.getElementById("play-overlay");
-    const videoPlayer = document.getElementById("video-player");
+    const playOverlay = document.getElementById("apple1-play-overlay");
+    const videoPlayer = document.getElementById("apple1-video-player");
 
     if (playOverlay && videoPlayer) {
       playOverlay.addEventListener("click", () => {
